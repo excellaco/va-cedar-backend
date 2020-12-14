@@ -1,0 +1,7 @@
+whizbang:
+  base-url: https:/whizbang.fake/
+  connect-timeout: 3000
+  idle-timeout: 10000
+  address-resolution-timeout: 3000
+
+

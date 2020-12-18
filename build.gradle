@@ -1,8 +1,8 @@
 plugins {
-	id 'org.springframework.boot' version '2.2.7.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
-	id "io.franzbecker.gradle-lombok" version '3.0.0'
-	id 'com.github.sherter.google-java-format' version '0.8'
+	id 'org.springframework.boot' version '2.4.1'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id "io.franzbecker.gradle-lombok" version '4.0.0'
+	id 'com.github.sherter.google-java-format' version '0.9'
 	id 'jacoco'
 	id 'java'
 	id "org.sonarqube" version "2.7.1"
@@ -31,7 +31,7 @@ configurations {
 }
 
 jacoco {
-	toolVersion = "0.8.3"
+	toolVersion = "0.8.5"
 	reportsDir = file("$buildDir/jacocoReportDir")
 }
 
@@ -87,6 +87,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.6.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 
 	implementation 'org.springframework.boot:spring-boot-starter-jetty'
 	implementation('org.springframework.boot:spring-boot-starter-web') {
@@ -98,7 +99,7 @@ dependencies {
 	implementation 'org.flywaydb:flyway-core'
 	implementation 'io.springfox:springfox-swagger2:2.9.2'
 	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
-	implementation 'net.logstash.logback:logstash-logback-encoder:5.3'
+	implementation 'net.logstash.logback:logstash-logback-encoder:6.5'
 	implementation 'org.springframework.boot:spring-boot-configuration-processor'
 	implementation 'javax.persistence:javax.persistence-api:2.2'
 

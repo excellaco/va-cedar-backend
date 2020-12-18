@@ -1,5 +1,5 @@
-# java-spring-webflux-starter
-A REST API starter for Java, Spring, and Webflux
+# va-cedar-backend
+A REST API for the VA Cedar Design Challenge
 
 ## Dependencies
 #### [Spring](https://spring.io/)

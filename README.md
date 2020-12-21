@@ -1,9 +1,9 @@
-# java-spring-webflux-starter
-A REST API starter for Java, Spring, and Webflux
+# va-cedar-backend
+A REST API for the VA Cedar Design Challenge
 
 ## Dependencies
 #### [Spring](https://spring.io/)
-- Spring Boot 2.2.7.RELEASE
+- Spring Boot 2.4.1
 - Webflux
 - Web
 - Logging
@@ -14,7 +14,7 @@ A REST API starter for Java, Spring, and Webflux
 
 #### Utilities
 - [Gradle](https://gradle.org/) - Build automation system
-- [Lombok 3.0.0](https://projectlombok.org/) - Developer productivity tool
+- [Lombok 4.0.0](https://projectlombok.org/) - Developer productivity tool
 - [Swagger 2.9.2](https://swagger.io/) - API Documentation
 - [goJF](https://github.com/sherter/google-java-format-gradle-plugin): Google Code formatter
 

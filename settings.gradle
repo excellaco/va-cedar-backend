@@ -3,4 +3,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'tcp-java'
+rootProject.name = 'va-cedar-backend'

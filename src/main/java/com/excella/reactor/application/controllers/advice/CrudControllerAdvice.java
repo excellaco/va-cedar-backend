@@ -79,9 +79,7 @@ public class CrudControllerAdvice {
     return buildGenericError(
         "Validation errors occurred",
         HttpStatus.BAD_REQUEST, // Consider HttpStatus.UNPROCESSABLE_ENTITY
-        e.getBindingResult()
-            .getFieldErrors()
-            .stream()
+        e.getBindingResult().getFieldErrors().stream()
             .map(CrudControllerAdvice::formatFieldError)
             .collect(Collectors.toUnmodifiableList()));
   }
@@ -102,8 +100,7 @@ public class CrudControllerAdvice {
     return buildGenericError(
         "Validation errors occurred",
         HttpStatus.BAD_REQUEST, // Consider HttpStatus.UNPROCESSABLE_ENTITY
-        e.getConstraintViolations()
-            .stream()
+        e.getConstraintViolations().stream()
             .map(CrudControllerAdvice::formatConstraintViolation)
             .collect(Collectors.toUnmodifiableList()));
   }
